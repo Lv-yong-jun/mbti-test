@@ -82,6 +82,10 @@ body{font-family:'PingFang SC','Helvetica Neue',Arial,sans-serif;background:#0a0
 
 .res-footer{font-size:12px;color:#444;text-align:center;margin-top:20px;line-height:1.6;padding-bottom:20px}
 
+/* 二维码 */
+.qr-sec{text-align:center;padding:24px 16px;background:linear-gradient(135deg,#f0f4ff,#e8f0fe);border-radius:16px;margin:24px 0;border:2px solid #ff9800}
+.qr-sec p{font-size:14px;color:#555;margin-bottom:12px;font-weight:600}
+
 /* 滑动动画 */
 .slide-up{animation:slideUp 0.4s ease forwards}
 @keyframes slideUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
@@ -435,6 +439,13 @@ function showResult(){
 
     '<button class="share-btn" onclick="shareResult()">📤 分享给朋友 · 一起测</button>' +
     '<button class="retry-btn" onclick="restartQuiz()">🔄 重新测试</button>' +
+
+    '<div class="qr-sec">' +
+    '<p>📱 扫码添加，了解你的性格优势</p>' +
+    '<img src="qrcode-wechat.jpg" alt="微信二维码" style="width:150px;height:150px;border-radius:10px;box-shadow:0 4px 16px rgba(0,0,0,.1);">' +
+    '<div style="font-size:13px;color:#888;margin-top:10px;line-height:1.6">吕勇军【平安金融科技集团】<br>长按识别 → 添加好友</div>' +
+    '</div>' +
+
     '<div class="res-footer">吕勇军【平安金融科技集团】<br>测试结果仅供参考 · 祝你找到真实的自己</div>' +
   '</div>';
 }
